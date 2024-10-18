@@ -1,10 +1,10 @@
 class_name PlayerController
-extends Camera3D
+extends Node
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_right"):
-		#TODO switch next scene
-		StateMachine.
+		StateMachine.goto_next_station()
+		
 	if Input.is_action_just_pressed("ui_left"):
-		#TODO switch previous scene
+		StateMachine.goto_previous_station()
 		
