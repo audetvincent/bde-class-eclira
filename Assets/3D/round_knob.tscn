@@ -1,4 +1,9 @@
-[gd_scene load_steps=5 format=4 uid="uid://ceaxyxjsbf7ql"]
+[gd_scene load_steps=7 format=4 uid="uid://ceaxyxjsbf7ql"]
+
+[ext_resource type="Texture2D" uid="uid://dma5hjsrst6f0" path="res://Assets/Textures/KnobTex.png" id="1_p6vvm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kn1j4"]
+albedo_texture = ExtResource("1_p6vvm")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n2k4y"]
 resource_name = "Material.005"
@@ -44,6 +49,7 @@ data = PackedVector3Array(14.3056, -0.0225553, 1.239, 14.5007, 0.277843, 1.21544
 
 [node name="RoundKnob" type="MeshInstance3D"]
 transform = Transform3D(0.307881, 0, 0, 0, 0.295044, 0.0879754, 0, -0.0879754, 0.295044, -4.40461, -0.209323, -0.663584)
+material_override = SubResource("StandardMaterial3D_kn1j4")
 mesh = SubResource("ArrayMesh_f6ijh")
 skeleton = NodePath("")
 
