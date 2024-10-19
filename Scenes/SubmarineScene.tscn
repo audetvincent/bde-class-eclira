@@ -1,0 +1,91 @@
+[gd_scene load_steps=7 format=3 uid="uid://dsgx2m7vrl28f"]
+
+[ext_resource type="PackedScene" uid="uid://brxppo5ccehw4" path="res://Assets/3D/Submarine.blend" id="1_01jdy"]
+[ext_resource type="PackedScene" uid="uid://cb6lpkyp1fwv4" path="res://Assets/3D/console_1.tscn" id="2_chmn6"]
+[ext_resource type="PackedScene" uid="uid://82bgjmnqchl7" path="res://Assets/3D/console_2.tscn" id="3_1s64g"]
+[ext_resource type="PackedScene" uid="uid://o8s7k88iv063" path="res://Assets/3D/tv_wall.tscn" id="4_rf08w"]
+[ext_resource type="PackedScene" uid="uid://dh7bhaww4lks5" path="res://Assets/3D/tv_screen.tscn" id="5_30cfe"]
+[ext_resource type="PackedScene" uid="uid://dbnolvjnh61gc" path="res://Scenes/CharacterGodMode.tscn" id="6_2mod1"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Submarine" parent="." instance=ExtResource("1_01jdy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.4964, -0.124344, 12.4479)
+
+[node name="Console1" parent="." instance=ExtResource("2_chmn6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.2625, 4.4, 22.785)
+
+[node name="Console2" parent="." instance=ExtResource("3_1s64g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.2625, 4.4, 22.785)
+
+[node name="Console3" parent="." instance=ExtResource("2_chmn6")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 26.2625, 4.4, 3)
+
+[node name="Console4" parent="." instance=ExtResource("3_1s64g")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.2625, 4.4, 3)
+
+[node name="TVWall" parent="." instance=ExtResource("4_rf08w")]
+transform = Transform3D(5.46061, 0.0156798, 0.00118151, -0.0358016, 2.42347, 0.00996931, -0.0169736, -0.0673358, 0.359079, 26.2625, 16.2, 23.7415)
+
+[node name="TVWall2" parent="." instance=ExtResource("4_rf08w")]
+transform = Transform3D(5.46061, 0.0156798, 0.00118151, -0.0358016, 2.42347, 0.00996931, -0.0169736, -0.0673358, 0.359079, 14.2625, 16.2, 23.7415)
+
+[node name="TVScreen" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(1.38103, 0.000271335, -0.00111534, -0.00905448, 0.0419376, -0.00941101, -0.00429274, -0.00116523, -0.33897, 29.6713, 16.14, 35.2467)
+
+[node name="TVScreen2" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(1.38103, 0.000271335, -0.00111534, -0.00905448, 0.0419376, -0.00941101, -0.00429274, -0.00116523, -0.33897, 22.9718, 16.254, 35.2656)
+
+[node name="TVScreen3" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(1.38103, 0.000271335, -0.00111534, -0.00905448, 0.0419376, -0.00941101, -0.00429274, -0.00116523, -0.33897, 28.1599, 18.194, 35.1947)
+
+[node name="TVScreen4" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(1.38103, 0.000271335, -0.00111534, -0.00905448, 0.0419376, -0.00941101, -0.00429274, -0.00116523, -0.33897, 24.375, 18.2226, 35.2048)
+
+[node name="TVScreen5" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(1.38103, 0.000271335, -0.00111534, -0.00905448, 0.0419376, -0.00941101, -0.00429274, -0.00116523, -0.33897, 17.5995, 16.14, 35.2467)
+
+[node name="TVScreen6" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(1.38103, 0.000271335, -0.00111534, -0.00905448, 0.0419376, -0.00941101, -0.00429274, -0.00116523, -0.33897, 10.9001, 16.254, 35.2656)
+
+[node name="TVScreen7" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(1.38103, 0.000271335, -0.00111534, -0.00905448, 0.0419376, -0.00941101, -0.00429274, -0.00116523, -0.33897, 16.0882, 18.194, 35.1947)
+
+[node name="TVScreen8" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(1.38103, 0.000271335, -0.00111534, -0.00905448, 0.0419376, -0.00941101, -0.00429274, -0.00116523, -0.33897, 12.3032, 18.2226, 35.2048)
+
+[node name="TVWall3" parent="." instance=ExtResource("4_rf08w")]
+transform = Transform3D(-5.46064, -0.0158455, -0.000297861, -0.0358016, 2.42347, 0.00996931, 0.00353572, 0.067297, -0.359081, 14.3571, 16.2, 1.46587)
+
+[node name="TVWall4" parent="." instance=ExtResource("4_rf08w")]
+transform = Transform3D(-5.46064, -0.0158455, -0.000297861, -0.0358016, 2.42347, 0.00996931, 0.00353572, 0.067297, -0.359081, 26.3571, 16.2, 1.4954)
+
+[node name="TVScreen9" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(-1.38104, -0.000274202, 0.000281177, -0.00905448, 0.0419376, -0.00941101, 0.000894197, 0.00116456, 0.338972, 10.9767, 16.14, -10.0477)
+
+[node name="TVScreen10" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(-1.38104, -0.000274202, 0.000281177, -0.00905448, 0.0419376, -0.00941101, 0.000894197, 0.00116456, 0.338972, 17.6762, 16.254, -10.0501)
+
+[node name="TVScreen11" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(-1.38104, -0.000274202, 0.000281177, -0.00905448, 0.0419376, -0.00941101, 0.000894197, 0.00116456, 0.338972, 12.4879, 18.194, -9.99193)
+
+[node name="TVScreen12" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(-1.38104, -0.000274202, 0.000281177, -0.00905448, 0.0419376, -0.00941101, 0.000894197, 0.00116456, 0.338972, 16.2729, 18.2226, -9.99269)
+
+[node name="TVScreen13" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(-1.38104, -0.000274202, 0.000281177, -0.00905448, 0.0419376, -0.00941101, 0.000894197, 0.00116456, 0.338972, 23.0484, 16.14, -10.018)
+
+[node name="TVScreen14" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(-1.38104, -0.000274202, 0.000281177, -0.00905448, 0.0419376, -0.00941101, 0.000894197, 0.00116456, 0.338972, 29.7479, 16.254, -10.0204)
+
+[node name="TVScreen15" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(-1.38104, -0.000274202, 0.000281177, -0.00905448, 0.0419376, -0.00941101, 0.000894197, 0.00116456, 0.338972, 24.5596, 18.194, -9.96222)
+
+[node name="TVScreen16" parent="." instance=ExtResource("5_30cfe")]
+transform = Transform3D(-1.38104, -0.000274202, 0.000281177, -0.00905448, 0.0419376, -0.00941101, 0.000894197, 0.00116456, 0.338972, 28.3446, 18.2226, -9.96299)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.8279, 21.7389, 13.1885)
+
+[node name="Node3D" parent="." instance=ExtResource("6_2mod1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.8035, 12.5428, 8.95121)
