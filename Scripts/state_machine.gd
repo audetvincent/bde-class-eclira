@@ -20,6 +20,10 @@ var navigation_scene:Node = preload("res://Scenes/Rooms/navigation.tscn").instan
 func _ready() -> void:
 	var root = get_tree().root
 	main_child = root.get_child(-1)
+	
+	if main_child.name != "Main":
+		return
+	
 	for n:Node3D in scene_order.values():
 		n.visible = false
 		main_child.add_child.call_deferred(n)
