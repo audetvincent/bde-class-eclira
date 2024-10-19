@@ -7,6 +7,9 @@ extends CharacterBody3D
 
 var target_velocity = Vector3.ZERO
 
+func _ready():
+	pass
+	
 
 func _physics_process(delta):
 	var direction = Vector3.ZERO
