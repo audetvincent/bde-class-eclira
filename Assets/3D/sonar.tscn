@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dumdlph8j8yp4"]
+
+[ext_resource type="PackedScene" uid="uid://1o34v2vmepiq" path="res://Assets/3D/FBX/Sonar.fbx" id="1_ljjuh"]
+
+[node name="Sonar" instance=ExtResource("1_ljjuh")]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 0.0302337, 0)
