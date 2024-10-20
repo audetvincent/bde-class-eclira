@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgheg2oqwgnbo"]
+
+[ext_resource type="PackedScene" uid="uid://c8rbgt8aj7a1w" path="res://Assets/3D/FBX/FaderStick.fbx" id="1_vxtxk"]
+
+[node name="FaderStick" instance=ExtResource("1_vxtxk")]
+
+[node name="FaderSlider" parent="." index="0"]
+transform = Transform3D(10, 0, 0, 0, -4.37114e-07, 10, 0, -10, -4.37114e-07, 0, 0, 0)

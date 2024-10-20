@@ -1,0 +1,410 @@
+[gd_scene load_steps=14 format=3 uid="uid://2lx55wxf7f32"]
+
+[ext_resource type="PackedScene" uid="uid://6gof6ku6a0ct" path="res://Assets/3D/alarm_light.tscn" id="1_46ibk"]
+[ext_resource type="PackedScene" uid="uid://cmxub61xfebi1" path="res://Assets/3D/console_1.tscn" id="2_6owxk"]
+[ext_resource type="PackedScene" uid="uid://dletwdnixqyo" path="res://Assets/3D/console_2.tscn" id="3_vahh6"]
+[ext_resource type="PackedScene" uid="uid://dt32yt2asqklm" path="res://Assets/3D/tv_wall.tscn" id="4_8270o"]
+[ext_resource type="PackedScene" uid="uid://dibtaquvomusk" path="res://Assets/3D/tv_screen.tscn" id="5_scwsh"]
+[ext_resource type="PackedScene" uid="uid://oe7kqhdtfy47" path="res://Assets/3D/knob_screen.tscn" id="6_bjbmn"]
+[ext_resource type="PackedScene" uid="uid://dk7bx5ch8ieuo" path="res://Assets/3D/knobtest.tscn" id="7_qt1fu"]
+[ext_resource type="PackedScene" uid="uid://bs3nbiwru0i6q" path="res://Assets/3D/console_button.tscn" id="8_v12hs"]
+[ext_resource type="PackedScene" uid="uid://dumdlph8j8yp4" path="res://Assets/3D/sonar.tscn" id="9_mlqxc"]
+[ext_resource type="PackedScene" uid="uid://dqxfvogng3tjc" path="res://Assets/3D/fader_button.tscn" id="10_gbyx6"]
+[ext_resource type="PackedScene" uid="uid://cgheg2oqwgnbo" path="res://Assets/3D/fader_stick.tscn" id="11_8sy0u"]
+[ext_resource type="PackedScene" uid="uid://cbgcuksphq8w8" path="res://Assets/3D/alarm_light_small.tscn" id="12_txn14"]
+[ext_resource type="PackedScene" uid="uid://bqxhx1v84j8uq" path="res://Assets/3D/submarine.tscn" id="13_kd5mh"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+light_color = Color(0, 0.529412, 1, 1)
+shadow_enabled = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="DirectionalLight3D"]
+transform = Transform3D(1, -2.98023e-08, -4.47035e-08, 2.98023e-08, 1, 2.98023e-08, 4.47035e-08, 2.98023e-08, 1, 1.34691, 9.59598, 21.2866)
+omni_range = 35.0
+omni_attenuation = 0.864
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="DirectionalLight3D"]
+transform = Transform3D(1, -2.98023e-08, -4.47035e-08, 2.98023e-08, 1, 2.98023e-08, 5.96046e-08, 5.96046e-08, 1, -2.05443, 7.89531, 22.2684)
+omni_range = 35.0
+omni_attenuation = 0.864
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="DirectionalLight3D"]
+transform = Transform3D(1, -2.98023e-08, -4.47035e-08, 2.98023e-08, 1, 2.98023e-08, 7.45058e-08, 5.96046e-08, 1, -4.72015, 6.56245, 23.038)
+omni_range = 35.0
+omni_attenuation = 0.864
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="DirectionalLight3D"]
+transform = Transform3D(1, -2.98023e-08, -4.47035e-08, 2.98023e-08, 1, 2.98023e-08, 5.96046e-08, 5.96046e-08, 1, -6.72377, 5.56064, 23.6164)
+omni_range = 35.0
+omni_attenuation = 0.864
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="DirectionalLight3D"]
+transform = Transform3D(1, -2.98023e-08, -4.47035e-08, 2.98023e-08, 1, 2.98023e-08, 7.45058e-08, 5.96046e-08, 1, -10.1251, 3.85997, 24.5983)
+omni_range = 35.0
+omni_attenuation = 0.864
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="DirectionalLight3D"]
+transform = Transform3D(1, 5.96046e-08, -8.9407e-08, 0, 1, -2.98023e-08, 1.04308e-07, 5.96046e-08, 1, -12.7908, 2.52711, 25.3678)
+omni_range = 35.0
+omni_attenuation = 0.864
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="DirectionalLight3D"]
+transform = Transform3D(1, -2.98023e-08, -4.47035e-08, 2.98023e-08, 1, 2.98023e-08, 7.45058e-08, 5.96046e-08, 1, -14.259, 1.79304, 25.7916)
+omni_range = 35.0
+omni_attenuation = 0.864
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="DirectionalLight3D"]
+transform = Transform3D(1, 5.96046e-08, -8.9407e-08, 0, 1, -2.98023e-08, 1.04308e-07, 5.96046e-08, 1, -17.6603, 0.0923698, 26.7735)
+omni_range = 35.0
+omni_attenuation = 0.864
+
+[node name="OmniLight3D9" type="OmniLight3D" parent="DirectionalLight3D"]
+transform = Transform3D(1, -2.98023e-08, -8.9407e-08, 2.98023e-08, 1, -2.98023e-08, 1.04308e-07, 5.96046e-08, 1, -20.326, -1.24049, 27.543)
+omni_range = 35.0
+omni_attenuation = 0.864
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 14.5526, -2.16702)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]
+follow_viewport_enabled = true
+
+[node name="TextureRect" type="TextureRect" parent="Camera3D/CanvasLayer"]
+offset_right = 1155.0
+offset_bottom = 639.0
+
+[node name="AlarmLight" parent="." instance=ExtResource("1_46ibk")]
+transform = Transform3D(0.5, 0, 0, 0, -0.5, 4.37114e-08, 0, -4.37114e-08, -0.5, 34.5536, 24.0572, 1.2623)
+
+[node name="Console1" parent="." instance=ExtResource("2_6owxk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.5661, 4.40513, 6.91825)
+
+[node name="Console2" parent="." instance=ExtResource("3_vahh6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.8464, 4.40513, 7.36238)
+
+[node name="TVWall" parent="." instance=ExtResource("4_8270o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.2618, 15.5589, 9.52312)
+
+[node name="TVScreen" parent="." instance=ExtResource("5_scwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.3465, 15.9514, 9.44797)
+
+[node name="TVScreen2" parent="." instance=ExtResource("5_scwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.1912, 14.2035, 9.50688)
+
+[node name="TVScreen3" parent="." instance=ExtResource("5_scwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.1399, 15.9242, 9.46915)
+
+[node name="TVWall2" parent="." instance=ExtResource("4_8270o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9963, 15.5589, 9.52312)
+
+[node name="TVScreen4" parent="." instance=ExtResource("5_scwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.0811, 15.9514, 9.44797)
+
+[node name="TVScreen5" parent="." instance=ExtResource("5_scwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9257, 14.2035, 9.50688)
+
+[node name="TVScreen6" parent="." instance=ExtResource("5_scwsh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8745, 15.9242, 9.46915)
+
+[node name="Console3" parent="." instance=ExtResource("2_6owxk")]
+transform = Transform3D(-0.999999, 0, 0.00113455, 0, 1, 0, -0.00113455, 0, -0.999999, 14.6774, 4.40513, -11.325)
+
+[node name="Console4" parent="." instance=ExtResource("3_vahh6")]
+transform = Transform3D(-0.999999, 0, 0.00113455, 0, 1, 0, -0.00113455, 0, -0.999999, 26.3976, 4.40513, -11.7558)
+
+[node name="TVWall3" parent="." instance=ExtResource("4_8270o")]
+transform = Transform3D(-0.999999, 0, 0.00113455, 0, 1, 0, -0.00113455, 0, -0.999999, 14.9847, 15.5589, -13.9295)
+
+[node name="TVScreen7" parent="." instance=ExtResource("5_scwsh")]
+transform = Transform3D(-0.999999, 0, 0.00113455, 0, 1, 0, -0.00113455, 0, -0.999999, 11.8999, 15.9514, -13.8578)
+
+[node name="TVScreen8" parent="." instance=ExtResource("5_scwsh")]
+transform = Transform3D(-0.999999, 0, 0.00113455, 0, 1, 0, -0.00113455, 0, -0.999999, 15.0553, 14.2035, -13.9132)
+
+[node name="TVScreen9" parent="." instance=ExtResource("5_scwsh")]
+transform = Transform3D(-0.999999, 0, 0.00113455, 0, 1, 0, -0.00113455, 0, -0.999999, 18.1065, 15.9242, -13.872)
+
+[node name="TVWall4" parent="." instance=ExtResource("4_8270o")]
+transform = Transform3D(-0.999999, 0, 0.00113455, 0, 1, 0, -0.00113455, 0, -0.999999, 26.2501, 15.5589, -13.9167)
+
+[node name="TVScreen10" parent="." instance=ExtResource("5_scwsh")]
+transform = Transform3D(-0.999999, 0, 0.00113455, 0, 1, 0, -0.00113455, 0, -0.999999, 23.1653, 15.9514, -13.8451)
+
+[node name="TVScreen11" parent="." instance=ExtResource("5_scwsh")]
+transform = Transform3D(-0.999999, 0, 0.00113455, 0, 1, 0, -0.00113455, 0, -0.999999, 26.3207, 14.2035, -13.9004)
+
+[node name="TVScreen12" parent="." instance=ExtResource("5_scwsh")]
+transform = Transform3D(-0.999999, 0, 0.00113455, 0, 1, 0, -0.00113455, 0, -0.999999, 29.3719, 15.9242, -13.8592)
+
+[node name="KnobScreen" parent="." instance=ExtResource("6_bjbmn")]
+transform = Transform3D(-0.25, 0, -2.18557e-08, 0, 0.25, 0, 2.18557e-08, 0, -0.25, 15.4348, 12.2276, -9.9503)
+
+[node name="knobtest" parent="." instance=ExtResource("7_qt1fu")]
+transform = Transform3D(-0.25, 5.65666e-09, -2.11109e-08, 0, 0.241481, 0.0647046, 2.18557e-08, 0.0647046, -0.241481, 13.9278, 12.2042, -9.85524)
+
+[node name="ConsoleButton" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 10.8271, 12.0343, -9.15763)
+
+[node name="ConsoleButton2" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 11.0528, 12.0343, -9.15763)
+
+[node name="ConsoleButton3" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 11.2748, 12.0343, -9.15763)
+
+[node name="ConsoleButton4" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 11.5005, 12.0343, -9.15763)
+
+[node name="ConsoleButton5" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 10.8271, 12.0502, -9.39183)
+
+[node name="ConsoleButton6" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 11.0528, 12.0502, -9.39183)
+
+[node name="ConsoleButton7" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 11.2748, 12.0502, -9.39183)
+
+[node name="ConsoleButton8" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 11.5005, 12.0502, -9.39183)
+
+[node name="ConsoleButton9" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 11.7069, 12.0343, -9.15763)
+
+[node name="ConsoleButton10" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 11.9327, 12.0343, -9.15763)
+
+[node name="ConsoleButton11" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 12.1546, 12.0343, -9.15763)
+
+[node name="ConsoleButton12" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 12.3804, 12.0343, -9.15763)
+
+[node name="ConsoleButton13" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 11.7069, 12.0502, -9.39183)
+
+[node name="ConsoleButton14" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 11.9327, 12.0502, -9.39183)
+
+[node name="ConsoleButton15" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 12.1546, 12.0502, -9.39183)
+
+[node name="ConsoleButton16" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 12.3804, 12.0502, -9.39183)
+
+[node name="ConsoleButton17" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 17.8497, 12.0343, -9.15763)
+
+[node name="ConsoleButton18" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 18.0754, 12.0343, -9.15763)
+
+[node name="ConsoleButton19" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 18.2974, 12.0343, -9.15763)
+
+[node name="ConsoleButton20" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 18.5231, 12.0343, -9.15763)
+
+[node name="ConsoleButton21" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 17.8497, 12.0502, -9.39183)
+
+[node name="ConsoleButton22" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 18.0754, 12.0502, -9.39183)
+
+[node name="ConsoleButton23" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 18.2974, 12.0502, -9.39183)
+
+[node name="ConsoleButton24" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 18.5231, 12.0502, -9.39183)
+
+[node name="ConsoleButton25" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 18.7296, 12.0343, -9.15763)
+
+[node name="ConsoleButton26" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 18.9553, 12.0343, -9.15763)
+
+[node name="ConsoleButton27" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 19.1773, 12.0343, -9.15763)
+
+[node name="ConsoleButton28" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 19.403, 12.0343, -9.15763)
+
+[node name="ConsoleButton29" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 18.7296, 12.0502, -9.39183)
+
+[node name="ConsoleButton30" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 18.9553, 12.0502, -9.39183)
+
+[node name="ConsoleButton31" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 19.1773, 12.0502, -9.39183)
+
+[node name="ConsoleButton32" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(-0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 19.403, 12.0502, -9.39183)
+
+[node name="Sonar" parent="." instance=ExtResource("9_mlqxc")]
+transform = Transform3D(-1, 2.26267e-08, -8.44439e-08, 0, 0.965926, 0.258819, 8.74228e-08, 0.258819, -0.965926, 23.785, 12.3327, -10.6938)
+
+[node name="FaderButton" parent="." instance=ExtResource("10_gbyx6")]
+transform = Transform3D(-5, 4.2222e-07, 1.13133e-07, 0, -1.2941, 4.82963, 4.37114e-07, 4.82963, 1.2941, 25.5939, 12.1399, -10.0208)
+
+[node name="FaderStick" parent="." instance=ExtResource("11_8sy0u")]
+transform = Transform3D(0.1, 0, 0, 0, 0.0965926, -0.0258819, 0, 0.0258819, 0.0965926, 25.6091, 12.1872, -10.1757)
+
+[node name="FaderButton2" parent="." instance=ExtResource("10_gbyx6")]
+transform = Transform3D(-5, 4.2222e-07, 1.13133e-07, 0, -1.2941, 4.82963, 4.37114e-07, 4.82963, 1.2941, 25.7972, 12.1399, -10.0208)
+
+[node name="FaderStick2" parent="." instance=ExtResource("11_8sy0u")]
+transform = Transform3D(0.1, 0, 0, 0, 0.0965926, -0.0258819, 0, 0.0258819, 0.0965926, 25.8125, 12.1872, -10.1757)
+
+[node name="FaderButton3" parent="." instance=ExtResource("10_gbyx6")]
+transform = Transform3D(-5, 4.2222e-07, 1.13133e-07, 0, -1.2941, 4.82963, 4.37114e-07, 4.82963, 1.2941, 25.9872, 12.1399, -10.0208)
+
+[node name="FaderStick3" parent="." instance=ExtResource("11_8sy0u")]
+transform = Transform3D(0.1, 0, 0, 0, 0.0965926, -0.0258819, 0, 0.0258819, 0.0965926, 26.0024, 12.1872, -10.1757)
+
+[node name="FaderButton4" parent="." instance=ExtResource("10_gbyx6")]
+transform = Transform3D(-5, 4.2222e-07, 1.13133e-07, 0, -1.2941, 4.82963, 4.37114e-07, 4.82963, 1.2941, 26.1777, 12.1399, -10.0208)
+
+[node name="FaderStick4" parent="." instance=ExtResource("11_8sy0u")]
+transform = Transform3D(0.1, 0, 0, 0, 0.0965926, -0.0258819, 0, 0.0258819, 0.0965926, 26.1929, 12.1872, -10.1757)
+
+[node name="FaderButton5" parent="." instance=ExtResource("10_gbyx6")]
+transform = Transform3D(-5, 4.2222e-07, 1.13133e-07, 0, -1.2941, 4.82963, 4.37114e-07, 4.82963, 1.2941, 26.3542, 12.1399, -10.0208)
+
+[node name="FaderStick5" parent="." instance=ExtResource("11_8sy0u")]
+transform = Transform3D(0.1, 0, 0, 0, 0.0965926, -0.0258819, 0, 0.0258819, 0.0965926, 26.3694, 12.1872, -10.1757)
+
+[node name="FaderButton6" parent="." instance=ExtResource("10_gbyx6")]
+transform = Transform3D(-5, 4.2222e-07, 1.13133e-07, 0, -1.2941, 4.82963, 4.37114e-07, 4.82963, 1.2941, 26.5405, 12.1399, -10.0208)
+
+[node name="FaderStick6" parent="." instance=ExtResource("11_8sy0u")]
+transform = Transform3D(0.1, 0, 0, 0, 0.0965926, -0.0258819, 0, 0.0258819, 0.0965926, 26.5557, 12.1872, -10.1757)
+
+[node name="AlarmLight2" parent="." instance=ExtResource("12_txn14")]
+transform = Transform3D(0.1, 0, 0, 0, 0.0965926, 0.0258819, 0, -0.0258819, 0.0965926, 21.7794, 12.7262, 7.60219)
+
+[node name="ConsoleButton33" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 30.731, 12.0335, 4.74316)
+
+[node name="ConsoleButton34" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 31.2278, 12.2743, 5.73683)
+
+[node name="ConsoleButton35" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 30.3748, 12.2494, 5.63436)
+
+[node name="ConsoleButton36" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 31.005, 12.4885, 6.62117)
+
+[node name="ConsoleButton37" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 28.6648, 12.399, 6.25165)
+
+[node name="ConsoleButton38" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 29.5008, 12.1488, 5.219)
+
+[node name="ConsoleButton39" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 29.885, 12.4698, 6.54394)
+
+[node name="ConsoleButton40" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 28.3792, 12.0389, 4.76547)
+
+[node name="ConsoleButton41" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 28.8578, 12.6484, 7.28085)
+
+[node name="ConsoleButton42" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 30.9684, 12.6913, 7.45793)
+
+[node name="ConsoleButton43" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 27.8466, 12.254, 5.65334)
+
+[node name="ConsoleButton44" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 27.5679, 12.5395, 6.83144)
+
+[node name="ConsoleButton45" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 27.3028, 12.8122, 7.957)
+
+[node name="ConsoleButton46" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 27.5679, 12.0268, 4.71566)
+
+[node name="ConsoleButton47" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 26.7483, 12.2811, 5.7652)
+
+[node name="ConsoleButton48" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 26.2672, 12.6434, 7.26052)
+
+[node name="ConsoleButton49" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 25.8851, 12.0863, 4.9611)
+
+[node name="KnobScreen2" parent="." instance=ExtResource("6_bjbmn")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 18.1116, 12.1038, 5.47732)
+
+[node name="KnobScreen3" parent="." instance=ExtResource("6_bjbmn")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 18.1529, 12.3309, 6.41484)
+
+[node name="KnobScreen4" parent="." instance=ExtResource("6_bjbmn")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 18.1433, 12.5446, 7.29682)
+
+[node name="KnobScreen5" parent="." instance=ExtResource("6_bjbmn")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 18.1597, 12.7737, 8.24217)
+
+[node name="ConsoleButton50" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 16.8476, 12.0595, 5.29466)
+
+[node name="ConsoleButton51" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 16.8703, 12.1791, 5.78813)
+
+[node name="ConsoleButton52" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 16.9009, 12.2689, 6.15897)
+
+[node name="ConsoleButton53" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 16.8963, 12.3891, 6.655)
+
+[node name="ConsoleButton54" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 16.9126, 12.4763, 7.01503)
+
+[node name="ConsoleButton55" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 16.9357, 12.6, 7.52548)
+
+[node name="ConsoleButton56" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 16.9267, 12.7101, 7.97992)
+
+[node name="ConsoleButton57" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 16.9173, 12.8251, 8.45423)
+
+[node name="KnobScreen6" parent="." instance=ExtResource("6_bjbmn")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 11.3282, 12.1038, 5.47732)
+
+[node name="KnobScreen7" parent="." instance=ExtResource("6_bjbmn")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 11.3694, 12.3309, 6.41484)
+
+[node name="KnobScreen8" parent="." instance=ExtResource("6_bjbmn")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 11.3598, 12.5446, 7.29682)
+
+[node name="KnobScreen9" parent="." instance=ExtResource("6_bjbmn")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 11.3763, 12.7737, 8.24217)
+
+[node name="ConsoleButton58" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 12.6453, 12.0595, 5.29466)
+
+[node name="ConsoleButton59" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 12.668, 12.1791, 5.78813)
+
+[node name="ConsoleButton60" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 12.6985, 12.2689, 6.15897)
+
+[node name="ConsoleButton61" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 12.6939, 12.3891, 6.655)
+
+[node name="ConsoleButton62" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 12.7102, 12.4763, 7.01503)
+
+[node name="ConsoleButton63" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 12.7333, 12.6, 7.52548)
+
+[node name="ConsoleButton64" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 12.7243, 12.7101, 7.97992)
+
+[node name="ConsoleButton65" parent="." instance=ExtResource("8_v12hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 12.715, 12.8251, 8.45423)
+
+[node name="Submarine" parent="." instance=ExtResource("13_kd5mh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7405, 0, -2.35243)
