@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgco7ar02lb2i"]
+
+[ext_resource type="PackedScene" uid="uid://bq11yde0o05t2" path="res://Assets/3D/fader_stick.tscn" id="1_08pmv"]
+[ext_resource type="PackedScene" uid="uid://dqxfvogng3tjc" path="res://Assets/3D/fader_button.tscn" id="2_vp2nq"]
+[ext_resource type="Script" path="res://Scripts/slider.gd" id="3_ggos7"]
+
+[node name="Fader" type="Node3D"]
+
+[node name="FaderButton" parent="." node_paths=PackedStringArray("slider_joint") instance=ExtResource("2_vp2nq")]
+transform = Transform3D(5, 0, 0, 0, -0.102012, 4.99896, 0, -4.99896, -0.102012, 0, 0, 0)
+script = ExtResource("3_ggos7")
+slider_joint = NodePath("../SliderJoint3D")
+
+[node name="FaderStick" parent="." instance=ExtResource("1_08pmv")]
+transform = Transform3D(0.999962, 0, 0.00872654, 0, 1, 0, -0.00872654, 0, 0.999962, 0, 0, 0)
+
+[node name="FaderSlider" parent="FaderStick" index="0"]
+transform = Transform3D(10, 0, 0, 0, -4.37114e-07, 10, 0, -10, -4.37114e-07, 0, 0, 0)
+
+[node name="SliderJoint3D" type="SliderJoint3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+node_b = NodePath("../FaderButton")
+linear_limit/upper_distance = 0.5
+linear_limit/lower_distance = -0.5
+
+[editable path="FaderButton"]
+[editable path="FaderStick"]
