@@ -2,7 +2,7 @@ class_name SliderInteractable
 extends Interactable
 
 @export var current_value:float = 0.0
-@export var mouse_incr:float = .03
+@export var mouse_incr:float = .001
 @export var slider_joint:SliderJoint3D
 
 # Define Axis, gives us the direction vector of the slider's axis.
@@ -21,11 +21,21 @@ func drag(mouse_relative:Vector2) -> void:
 	var drag_amount = movement_world.dot(axis) * mouse_incr
 	
 	var current_position:Vector3 = global_transform.origin
-	var new_position:Vector3 = current_position + axis * drag_amount
 	# Measures the new position relative to the joint's origin.
-	var scalar_projection:float = axis.dot(new_position - slider_joint.global_transform.origin)
+	var new_position:Vector3 = current_position + axis * drag_amount
+	
+	# Manually apply the scale vector so that it can be apply to 
+	# the scalar_projection and the constrained_position.
+	# We do that because otherwise the boundary set by the SlideJoint3D are not respected
+	var scale_projection:Vector3 = Vector3(
+		axis.x * scale.x,
+		axis.y * scale.y,
+		axis.z * scale.z,
+	)
+	var scalar_projection:float = axis.dot(new_position - slider_joint.global_transform.origin) * scale_projection.length() 
+	
 	# Gets the actual new position, clamped along the axis
-	var constrained_position:Vector3 = axis * clamp(scalar_projection, -maximum_value, -minimum_value)
+	var constrained_position:Vector3 = axis * clamp(scalar_projection, minimum_value, maximum_value) / scale_projection.length()
 	# Apply the contrained position to the joint'origin
 	global_transform.origin = slider_joint.global_transform.origin + constrained_position
 	

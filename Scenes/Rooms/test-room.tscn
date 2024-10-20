@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=4 uid="uid://b1qqe4a8vxy7e"]
+[gd_scene load_steps=14 format=4 uid="uid://b1qqe4a8vxy7e"]
 
 [ext_resource type="Script" path="res://Scripts/slider.gd" id="1_b7oa4"]
 [ext_resource type="Script" path="res://Scripts/player-controller.gd" id="2_xsat5"]
+[ext_resource type="PackedScene" uid="uid://dgco7ar02lb2i" path="res://Scenes/fader.tscn" id="3_el3ho"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_16xpg"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -72,7 +73,7 @@ shadow_mesh = SubResource("ArrayMesh_6pyu2")
 environment = SubResource("Environment_2iygn")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.258819, -0.836516, 0.482963, 2.78059e-08, 0.5, 0.866026, -0.965926, -0.224144, 0.12941, 3, 0, 2)
+transform = Transform3D(-0.996779, -0.0694548, 0.0400994, 2.00554e-08, 0.5, 0.866025, -0.0801986, 0.863235, -0.49839, 3, 0, 2)
 shadow_enabled = true
 
 [node name="Wall" type="MeshInstance3D" parent="."]
@@ -113,8 +114,7 @@ mesh = SubResource("ArrayMesh_pmhb6")
 skeleton = NodePath("")
 
 [node name="SliderJoint3D" type="SliderJoint3D" parent="Station/StaticBody3D"]
-transform = Transform3D(-2.6077e-08, -4.28408e-08, -1, -0.927836, 0.372988, 0, 0.372988, 0.927837, -3.25963e-08, 2.91036e-10, 0.449403, 0.107615)
-top_level = true
+transform = Transform3D(0.0010719, 0.361182, 8.08464, -3.6164, 7.23254, -0.322634, -7.23972, -3.61276, 0.162359, 0.0204293, 0.326472, -0.368519)
 node_b = NodePath("..")
 linear_limit/upper_distance = 0.1
 linear_limit/lower_distance = -0.1
@@ -123,3 +123,6 @@ linear_limit/lower_distance = -0.1
 transform = Transform3D(1, 0, 0, 0, 0.978148, 0.207912, 0, -0.207912, 0.978148, -1.19209e-07, 0.60405, 0.629002)
 fov = 90.0
 script = ExtResource("2_xsat5")
+
+[node name="Fader" parent="." instance=ExtResource("3_el3ho")]
+transform = Transform3D(0.2, 0, 0, 0, 0.141421, -0.141421, 0, 0.141421, 0.141421, 0.168287, 0.423707, 0.305324)
