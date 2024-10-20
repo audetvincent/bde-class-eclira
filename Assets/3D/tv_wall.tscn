@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://dt32yt2asqklm"]
 
 [ext_resource type="PackedScene" uid="uid://k30byk8qfsds" path="res://Assets/3D/FBX/TVWall.fbx" id="1_35o4l"]
-[ext_resource type="Material" uid="uid://gvs68ciolkls" path="res://Assets/Materials/ArmyBlueMetal.tres" id="2_4fej2"]
+[ext_resource type="Material" uid="uid://bh6oganeo5nb0" path="res://Assets/Materials/BlueMetalPlate.tres" id="2_gnm78"]
 
 [node name="TVWall" instance=ExtResource("1_35o4l")]
 
 [node name="TVWall" parent="." index="0"]
-material_override = ExtResource("2_4fej2")
+material_override = ExtResource("2_gnm78")

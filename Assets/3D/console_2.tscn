@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://dletwdnixqyo"]
 
 [ext_resource type="PackedScene" uid="uid://dncqu1ugbao1n" path="res://Assets/3D/FBX/Console2.fbx" id="1_xuvc3"]
-[ext_resource type="Material" uid="uid://gvs68ciolkls" path="res://Assets/Materials/ArmyBlueMetal.tres" id="2_27b5p"]
+[ext_resource type="Material" uid="uid://w26lqoqn0atg" path="res://Assets/Materials/DarkBlueMetalPlate.tres" id="2_un44x"]
 
 [node name="Console2" instance=ExtResource("1_xuvc3")]
 
 [node name="Console2" parent="." index="0"]
-material_override = ExtResource("2_27b5p")
+material_override = ExtResource("2_un44x")
