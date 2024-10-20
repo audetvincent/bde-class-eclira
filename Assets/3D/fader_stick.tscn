@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgheg2oqwgnbo"]
+
+[ext_resource type="PackedScene" uid="uid://c8rbgt8aj7a1w" path="res://Assets/3D/FBX/FaderStick.fbx" id="1_vxtxk"]
+
+[node name="FaderStick" instance=ExtResource("1_vxtxk")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)

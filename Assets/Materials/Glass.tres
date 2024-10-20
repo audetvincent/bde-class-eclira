@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://23nwblmeyhve"]
+
+[ext_resource type="Shader" path="res://Assets/Materials/Glass.gdshader" id="1_33t6h"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_33t6h")
+shader_parameter/distortion_size = 0.4
+shader_parameter/color = Color(0.593134, 0.593134, 0.593134, 0.588235)

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbgcuksphq8w8"]
+
+[ext_resource type="PackedScene" uid="uid://c4tinv255ngkd" path="res://Assets/3D/AlarmLight.blend" id="1_bc3ri"]
+[ext_resource type="Material" uid="uid://23nwblmeyhve" path="res://Assets/Materials/Glass.tres" id="2_i7k3t"]
+
+[node name="AlarmLight" instance=ExtResource("1_bc3ri")]
+transform = Transform3D(0.1, 0, 0, 0, -0.1, 1.50996e-08, 0, -1.50996e-08, -0.1, 0, 0, 0)
+
+[node name="Cube_001" parent="." index="1"]
+material_override = ExtResource("2_i7k3t")
+cast_shadow = 0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Icosphere" index="0"]
+omni_range = 11.3051
