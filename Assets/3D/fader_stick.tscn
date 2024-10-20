@@ -3,4 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://c8rbgt8aj7a1w" path="res://Assets/3D/FBX/FaderStick.fbx" id="1_vxtxk"]
 
 [node name="FaderStick" instance=ExtResource("1_vxtxk")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="FaderSlider" parent="." index="0"]
+transform = Transform3D(10, 0, 0, 0, -4.37114e-07, 10, 0, -10, -4.37114e-07, 0, 0, 0)

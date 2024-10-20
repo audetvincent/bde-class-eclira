@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://ca27sqk08w7ec"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/Grain.gdshader" id="1_0k4np"]
+
+[resource]
+shader = ExtResource("1_0k4np")
+shader_parameter/grain_amount = 0.05
+shader_parameter/grain_size = 1.0
