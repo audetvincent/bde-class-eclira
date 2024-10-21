@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://5uh8qn4du2lt"]
+
+[ext_resource type="PackedScene" uid="uid://btomy75vflx6o" path="res://Assets/3D/FBX/TVWall2.fbx" id="1_47gby"]
+[ext_resource type="Material" uid="uid://bh6oganeo5nb0" path="res://Assets/Materials/BlueMetalPlate.tres" id="2_7os40"]
+
+[node name="TVWall2" instance=ExtResource("1_47gby")]
+
+[node name="TVWall" parent="." index="0"]
+material_override = ExtResource("2_7os40")

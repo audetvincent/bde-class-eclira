@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://bh6oganeo5nb0"]
+
+[ext_resource type="Texture2D" uid="uid://gyqtwpqjba27" path="res://Assets/Textures/blue_metal_plate_diff_4k.jpg" id="1_cl23x"]
+[ext_resource type="Texture2D" uid="uid://fi4wc5ko1jre" path="res://Assets/Textures/blue_metal_plate_disp_4k.png" id="2_q22ux"]
+
+[resource]
+albedo_texture = ExtResource("1_cl23x")
+metallic = 0.5
+metallic_specular = 0.22
+normal_enabled = true
+normal_scale = 7.13
+normal_texture = ExtResource("2_q22ux")
+uv1_scale = Vector3(4.35, 4.35, 4.35)
+uv1_offset = Vector3(0.045, 0, 0)
+uv1_triplanar = true

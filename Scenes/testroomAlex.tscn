@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://2lx55wxf7f32"]
+[gd_scene load_steps=18 format=3 uid="uid://2lx55wxf7f32"]
 
 [ext_resource type="PackedScene" uid="uid://6gof6ku6a0ct" path="res://Assets/3D/alarm_light.tscn" id="1_46ibk"]
+[ext_resource type="Material" uid="uid://ca27sqk08w7ec" path="res://Assets/Materials/Grain.tres" id="1_bfoa8"]
 [ext_resource type="PackedScene" uid="uid://cmxub61xfebi1" path="res://Assets/3D/console_1.tscn" id="2_6owxk"]
 [ext_resource type="PackedScene" uid="uid://dletwdnixqyo" path="res://Assets/3D/console_2.tscn" id="3_vahh6"]
 [ext_resource type="PackedScene" uid="uid://dt32yt2asqklm" path="res://Assets/3D/tv_wall.tscn" id="4_8270o"]
@@ -13,8 +14,19 @@
 [ext_resource type="PackedScene" uid="uid://cgheg2oqwgnbo" path="res://Assets/3D/fader_stick.tscn" id="11_8sy0u"]
 [ext_resource type="PackedScene" uid="uid://cbgcuksphq8w8" path="res://Assets/3D/alarm_light_small.tscn" id="12_txn14"]
 [ext_resource type="PackedScene" uid="uid://bqxhx1v84j8uq" path="res://Assets/3D/submarine.tscn" id="13_kd5mh"]
+[ext_resource type="PackedScene" uid="uid://c62y8v12ruuas" path="res://Assets/3D/FBX/AlarmLightwanim.fbx" id="15_l72hj"]
+[ext_resource type="PackedScene" uid="uid://cr5pv1hhb2rce" path="res://Assets/3D/FBX/Manual.fbx" id="16_vhvdv"]
+
+[sub_resource type="Environment" id="Environment_43hbe"]
+background_mode = 1
+fog_enabled = true
+fog_light_energy = 0.0
+volumetric_fog_density = 0.1045
 
 [node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_43hbe")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
@@ -67,17 +79,16 @@ omni_range = 35.0
 omni_attenuation = 0.864
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 14.5526, -2.16702)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.80433, 12.4678, 1.61116)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]
-follow_viewport_enabled = true
 
-[node name="TextureRect" type="TextureRect" parent="Camera3D/CanvasLayer"]
-offset_right = 1155.0
-offset_bottom = 639.0
-
-[node name="AlarmLight" parent="." instance=ExtResource("1_46ibk")]
-transform = Transform3D(0.5, 0, 0, 0, -0.5, 4.37114e-08, 0, -4.37114e-08, -0.5, 34.5536, 24.0572, 1.2623)
+[node name="ColorRect" type="ColorRect" parent="Camera3D/CanvasLayer"]
+material = ExtResource("1_bfoa8")
+offset_left = -1804.0
+offset_top = -1054.0
+offset_right = 7951.0
+offset_bottom = 6377.0
 
 [node name="Console1" parent="." instance=ExtResource("2_6owxk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.5661, 4.40513, 6.91825)
@@ -408,3 +419,12 @@ transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 12.715, 12.8251, 8.4542
 
 [node name="Submarine" parent="." instance=ExtResource("13_kd5mh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7405, 0, -2.35243)
+
+[node name="AlarmLightwanim" parent="." instance=ExtResource("15_l72hj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.8978, 4.40512, -2.59267)
+
+[node name="AlarmLight" parent="." instance=ExtResource("1_46ibk")]
+transform = Transform3D(0.5, 0, 0, 0, -0.5, 4.37114e-08, 0, -4.37114e-08, -0.5, 34.2488, 24.0884, 0.835117)
+
+[node name="Manual" parent="." instance=ExtResource("16_vhvdv")]
+transform = Transform3D(-0.0411781, 0, 0.999152, 0, 1, 0, -0.999152, 0, -0.0411781, 1.63309, 11.7222, 2.33002)
