@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://2lx55wxf7f32"]
+[gd_scene load_steps=18 format=3 uid="uid://2lx55wxf7f32"]
 
 [ext_resource type="PackedScene" uid="uid://6gof6ku6a0ct" path="res://Assets/3D/alarm_light.tscn" id="1_46ibk"]
 [ext_resource type="Material" uid="uid://ca27sqk08w7ec" path="res://Assets/Materials/Grain.tres" id="1_bfoa8"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://cbgcuksphq8w8" path="res://Assets/3D/alarm_light_small.tscn" id="12_txn14"]
 [ext_resource type="PackedScene" uid="uid://bqxhx1v84j8uq" path="res://Assets/3D/submarine.tscn" id="13_kd5mh"]
 [ext_resource type="PackedScene" uid="uid://c62y8v12ruuas" path="res://Assets/3D/FBX/AlarmLightwanim.fbx" id="15_l72hj"]
+[ext_resource type="PackedScene" uid="uid://cr5pv1hhb2rce" path="res://Assets/3D/FBX/Manual.fbx" id="16_vhvdv"]
 
 [sub_resource type="Environment" id="Environment_43hbe"]
 background_mode = 1
@@ -424,3 +425,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.8978, 4.40512, -2.59267)
 
 [node name="AlarmLight" parent="." instance=ExtResource("1_46ibk")]
 transform = Transform3D(0.5, 0, 0, 0, -0.5, 4.37114e-08, 0, -4.37114e-08, -0.5, 34.2488, 24.0884, 0.835117)
+
+[node name="Manual" parent="." instance=ExtResource("16_vhvdv")]
+transform = Transform3D(-0.0411781, 0, 0.999152, 0, 1, 0, -0.999152, 0, -0.0411781, 1.63309, 11.7222, 2.33002)
